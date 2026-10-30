@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score
 
 RATE = 9.98  # 1 MAD = 9.98 INR
 
-model = joblib.load('data/models/model.pkl')
+model = joblib.load('models/model.pkl')
 X_test = pd.read_csv('data/processed/X_test.csv')
 y_test = pd.read_csv('data/processed/y_test.csv').squeeze()
 
